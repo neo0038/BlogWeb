@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const Articale = require('./../models/article')
+const Articale = require('./../models/article');
+const article = require('./../models/article');
 
 router.get('/new', (req, res) => {
-    res.render('articles/new')
+    res.render('articles/new', {article: new Articale()})
 })
 
 router.get('/:id', (req,res) => {
