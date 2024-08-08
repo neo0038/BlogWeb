@@ -5,6 +5,7 @@ const app = express()
 const port = 3000;
 
 mongoose.connect('mongodb://localhost:27017/mydatabase', {
+
   })
 
 app.set('view engine', 'ejs')
