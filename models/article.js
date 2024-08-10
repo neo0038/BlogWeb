@@ -38,10 +38,11 @@ articleSchema.pre('validate', function(next) {
   }
 
   if (this.markdown) {
-    this.sanitizedHtml = dompurify.sanitize(marked(this.markdown))
+    this.sanitizedHtml = dompurify.sanitize(marked.parse(this.markdown))
   }
 
   next()
 })
 
-module.exports = mongoose.model('Article', articleSchema)
+const Article = mongoose.model('Article', articleSchema);
+module.exports = Article;
