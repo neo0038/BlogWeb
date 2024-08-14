@@ -34,8 +34,6 @@ To run this project locally, follow these steps:
    cd BlogWeb
 Install dependencies:
 
-bash
-Copy code
 npm install
 Set up the MongoDB database:
 
@@ -43,8 +41,7 @@ Ensure MongoDB is installed and running on your local machine.
 The application connects to a local MongoDB instance using the default settings.
 Run the application:
 
-bash
-Copy code
+
 npm start
 The application will be accessible at http://localhost:5000.
 
